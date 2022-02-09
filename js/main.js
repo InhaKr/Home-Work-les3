@@ -4,88 +4,49 @@
 //   в.найти максимальное число и минимальное число.
 // debugger
 
-let a = [];
-let B = [];
-a.length = 5;
-let max = 0;
-let min = 20;
+// let a = [];
+// let B = [];
+// a.length = 5;
+// let w = 0;
 
+// for (let i = 0; i < a.length; i++) {
+//   a[i] = Math.floor(Math.random() * 20);
+// }
+// console.log(a);
 
-for (let i = 0; i < a.length; i++) {
-  a[i] = Math.floor(Math.random() * 20);
-  let c = 0;
+// let max = a[0];
+// let min = a[0];
 
-    if(a[i] > max) {
-      max = a[i];
-    }
-    if(a[i] < min) {
-      min = a[i];
-    }
+// for (let i = 0; i < a.length; i++) {
+//   if (a[i] > max) {
+//     max = a[i];
+//   }
 
-  for (let k = 0; k <= a[i]; k++) {
+//   if (a[i] < min) {
+//     min = a[i];
+//   }
+// }
+// console.log(max);
+// console.log(min);
 
-    if (a[i] % k == 0) {
-      c = c + 1;
-    }
-  }
+// for (let i = 0; i < a.length; i++) {
+//     let c = 0;
 
-  if (c <= 2 && a[i] != 0 && a[i] != 1) {
-    console.log(a[i]);
-    B[i] = a[i];
-  }
-}
+//   for (let k = 0; k <= a[i]; k++) {
 
-console.log(a);
-console.log(max);
-console.log(min);
-console.log(B);
+//     if (a[i] % k == 0) {
+//       c = c + 1;
+//     }
+//   }
 
+//   if (c <= 2 && a[i] != 0 && a[i] != 1) {
+//     console.log(a[i]);
+//     B[w] = a[i];
+//     w++;
+//   }
+// }
 
-
-// // debugger
-let a = [];
-let B = [];
-a.length = 5;
-let w = 0;
-
-for (let i = 0; i < a.length; i++) {
-  a[i] = Math.floor(Math.random() * 20);
-}
-console.log(a);
-
-let max = a[0];
-let min = a[0];
-
-for (let i = 0; i < a.length; i++) {
-  if (a[i] > max) {
-    max = a[i];
-  }
-
-  if (a[i] < min) {
-    min = a[i];
-  }
-}
-console.log(max);
-console.log(min);
-
-for (let i = 0; i < a.length; i++) {
-    let c = 0;
-
-  for (let k = 0; k <= a[i]; k++) {
-
-    if (a[i] % k == 0) {
-      c = c + 1;
-    }
-  }
-
-  if (c <= 2 && a[i] != 0 && a[i] != 1) {
-    console.log(a[i]);
-    B[w] = a[i];
-    w++;
-  }
-}
-
-console.log(B);
+// console.log(B);
 
 
 
@@ -96,60 +57,60 @@ console.log(B);
 // Оригинальный массив А сохранять не нужно (т.е. он должен перевернуться).
 // debugger
 
-let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-console.log(a);
+// console.log(a);
 
 
-for (let i = 0; i < a.length / 2; i++) {
-  // console.log(a[i]);
-  let c =  a[i];
-  a[i] =a[a.length - i - 1];
-  a[a.length - i - 1] = c;
-};
-console.log(a);
+// for (let i = 0; i < a.length / 2; i++) {
+//   // console.log(a[i]);
+//   let c =  a[i];
+//   a[i] =a[a.length - i - 1];
+//   a[a.length - i - 1] = c;
+// };
+// console.log(a);
 
 
 
 
 // 3.Создать массивы А и В. Заполнить случайными числами.
 //  Найди все элементы которые повторяются в массивах А и B
-let A = [];
-A.length = 10;
+// let A = [];
+// A.length = 3;
 
-let B = [];
-B.length = 10;
+// let B = [];
+// B.length = 3;
 
-for (let i = 0; i < A.length; i++) {
-  A[i] = '' + Math.floor(Math.random() * 50);
-};
-console.log(A);
+// for (let i = 0; i < A.length; i++) {
+//   A[i] = '' + Math.floor(Math.random() * 50);
+// };
+// console.log(A);
 
-for (let i = 0; i < B.length; i++) {
-  B[i] = '' + Math.floor(Math.random() * 50);
-};
-console.log(B);
+// for (let i = 0; i < B.length; i++) {
+//   B[i] = '' + Math.floor(Math.random() * 50);
+// };
+// console.log(B);
 
-A.sort();
-B.sort();
-let i = A.length;
-let j = B.length;
-let same = [];
+// A.sort();
+// B.sort();
+// let i = A.length;
+// let j = B.length;
+// let same = [];
 
-while (i > 0 && j > 0) {
-  i--;
-  j--;
+// while (i > 0 && j > 0) {
+//   i--;
+//   j--;
 
 
-  if (A[i] > B[j]) {
-    j++;
-  } else if (A[i] < B[j]) {
-    i++;
-  } else {
-    same.push(A[i]);
-  }
-}
-console.log(same);
+//   if (A[i] > B[j]) {
+//     j++;
+//   } else if (A[i] < B[j]) {
+//     i++;
+//   } else {
+//     same.push(A[i]);
+//   }
+// }
+// console.log(same);
 
 
 // 4.В одномерном массиве произвести такую замену: 1 элемент поменять с 2,
